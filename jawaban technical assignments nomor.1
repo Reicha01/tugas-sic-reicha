@@ -1,0 +1,67 @@
+icrosoft Windows [Version 10.0.19042.685]
+(c) 2020 Microsoft Corporation. All rights reserved.
+
+C:\Users\Admin\Downloads\coba>cd "git basic"
+
+C:\Users\Admin\Downloads\coba\git basic>git init
+Initialized empty Git repository in C:/Users/Admin/Downloads/coba/git basic/.git/
+
+C:\Users\Admin\Downloads\coba\git basic>git add .
+
+C:\Users\Admin\Downloads\coba\git basic>git commit -m "adding first.txt"
+[master (root-commit) f302601] adding first.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 first.txt.txt
+
+C:\Users\Admin\Downloads\coba\git basic>echo>second.txt
+
+C:\Users\Admin\Downloads\coba\git basic>git add .
+
+C:\Users\Admin\Downloads\coba\git basic>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   second.txt
+
+
+C:\Users\Admin\Downloads\coba\git basic>git commit -m "adding second.txt"
+[master bf67bee] adding second.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 second.txt
+
+C:\Users\Admin\Downloads\coba\git basic>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\Admin\Downloads\coba\git basic>git add .
+
+C:\Users\Admin\Downloads\coba\git basic>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    first.txt.txt
+
+
+C:\Users\Admin\Downloads\coba\git basic>git commit -m "removing fitst.txt"
+[master c5c83c5] removing fitst.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 first.txt.txt
+
+C:\Users\Admin\Downloads\coba\git basic>git log
+commit c5c83c5fb98aafb0cb93454908b79d92992b9a64 (HEAD -> master)
+Author: reicha01 <ichaseptian.tika201@gmail.com>
+Date:   Wed Jun 29 16:26:06 2022 +0700
+
+    removing fitst.txt
+
+commit bf67bee34b09e7c62c8c514618d718ff91a59dba
+Author: reicha01 <ichaseptian.tika201@gmail.com>
+Date:   Wed Jun 29 16:24:08 2022 +0700
+
+    adding second.txt
+
+commit f30260158c9eb3fa618b243a4705bbd7ef05c2de
+Author: reicha01 <ichaseptian.tika201@gmail.com>
+Date:   Wed Jun 29 16:20:23 2022 +0700
+
+    adding first.txt
