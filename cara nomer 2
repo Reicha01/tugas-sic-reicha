@@ -1,0 +1,284 @@
+Microsoft Windows [Version 10.0.19042.685]
+(c) 2020 Microsoft Corporation. All rights reserved.
+
+C:\Users\Admin\Downloads\coba\reicha>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\Admin\Downloads\coba\reicha>cat README.md
+'cat' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Downloads\coba\reicha>type README.md
+"Hello world"
+C:\Users\Admin\Downloads\coba\reicha>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\Admin\Downloads\coba\reicha>git checkout README.md
+Updated 1 path from the index
+
+C:\Users\Admin\Downloads\coba\reicha>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\Admin\Downloads\coba\reicha>type README.md
+"Halo perkenalkan aku halaman utama"
+C:\Users\Admin\Downloads\coba\reicha>git branch cv
+
+C:\Users\Admin\Downloads\coba\reicha>git branch
+  cv
+* master
+
+C:\Users\Admin\Downloads\coba\reicha>git checkout cv
+Switched to branch 'cv'
+
+C:\Users\Admin\Downloads\coba\reicha>git branch
+* cv
+  master
+
+C:\Users\Admin\Downloads\coba\reicha>echo>cv.txt
+
+C:\Users\Admin\Downloads\coba\reicha>edit cv.txt
+'edit' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Downloads\coba\reicha>micro cv.txt
+'micro' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Admin\Downloads\coba\reicha>type
+The syntax of the command is incorrect.
+
+C:\Users\Admin\Downloads\coba\reicha>type cv.txt
+Ini adalah file CV
+
+C:\Users\Admin\Downloads\coba\reicha>git commit -m "Initial CV"
+On branch cv
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        cv.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\Admin\Downloads\coba\reicha>git add .
+
+C:\Users\Admin\Downloads\coba\reicha>git commit -m "Initial CV"
+[cv 490336b] Initial CV
+ 1 file changed, 1 insertion(+)
+ create mode 100644 cv.txt
+
+C:\Users\Admin\Downloads\coba\reicha>git add .
+
+C:\Users\Admin\Downloads\coba\reicha>git commit -m "samsung service center"
+[cv f14bca7] samsung service center
+ 1 file changed, 1 insertion(+)
+
+C:\Users\Admin\Downloads\coba\reicha>git add .
+
+C:\Users\Admin\Downloads\coba\reicha>git commit -m "plazza"
+[cv eaa6dd3] plazza
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+C:\Users\Admin\Downloads\coba\reicha>type cv.txt
+Ini adalah file CV
+1.samsung service center
+2.plazza
+C:\Users\Admin\Downloads\coba\reicha>git add .
+
+C:\Users\Admin\Downloads\coba\reicha>git status
+On branch cv
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   cv.txt
+
+
+C:\Users\Admin\Downloads\coba\reicha>git commit -m "lombok ijo"
+[cv 90a8b66] lombok ijo
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+C:\Users\Admin\Downloads\coba\reicha>git log
+commit 90a8b66fb7f680a532e0152308acfc87700a0a53 (HEAD -> cv)
+Author: reicha01 <ichaseptian.tika201@gmail.com>
+Date:   Thu Jun 30 10:23:19 2022 +0700
+
+    lombok ijo
+
+commit eaa6dd32982ca4a037243ba082bd42ea12a98501
+Author: reicha01 <ichaseptian.tika201@gmail.com>
+Date:   Thu Jun 30 10:21:05 2022 +0700
+
+    plazza
+
+commit f14bca7637e7c5064e302ae8add792a9a036dc10
+Author: reicha01 <ichaseptian.tika201@gmail.com>
+Date:   Thu Jun 30 10:19:24 2022 +0700
+
+    samsung service center
+
+commit 490336b2593912fd454f9cbda0be010b19fac7d7
+Author: reicha01 <ichaseptian.tika201@gmail.com>
+Date:   Thu Jun 30 10:17:41 2022 +0700
+
+    Initial CV
+
+commit 0340ea60b63980498377e5a1eb510dd22694f680 (master)
+Author: reicha01 <ichaseptian.tika201@gmail.com>
+Date:   Wed Jun 29 16:58:58 2022 +0700
+
+    first commit
+
+C:\Users\Admin\Downloads\coba\reicha>git checkout master
+Switched to branch 'master'
+
+C:\Users\Admin\Downloads\coba\reicha>git add .
+
+C:\Users\Admin\Downloads\coba\reicha>git commit -m "update master pertama"
+[master e8bd7f4] update master pertama
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+C:\Users\Admin\Downloads\coba\reicha>git log
+commit e8bd7f4fb048205d210bc0a3f85ef144ed822245 (HEAD -> master)
+Author: reicha01 <ichaseptian.tika201@gmail.com>
+Date:   Thu Jun 30 10:27:17 2022 +0700
+
+    update master pertama
+
+commit 0340ea60b63980498377e5a1eb510dd22694f680
+Author: reicha01 <ichaseptian.tika201@gmail.com>
+Date:   Wed Jun 29 16:58:58 2022 +0700
+
+    first commit
+
+C:\Users\Admin\Downloads\coba\reicha>git branch
+  cv
+* master
+
+C:\Users\Admin\Downloads\coba\reicha>git checkout master
+Already on 'master'
+
+C:\Users\Admin\Downloads\coba\reicha>git merge cv
+Merge made by the 'ort' strategy.
+ cv.txt | 4 ++++
+ 1 file changed, 4 insertions(+)
+ create mode 100644 cv.txt
+
+C:\Users\Admin\Downloads\coba\reicha>git branch
+  cv
+* master
+
+C:\Users\Admin\Downloads\coba\reicha>dir
+ Volume in drive C has no label.
+ Volume Serial Number is ACE6-A13B
+
+ Directory of C:\Users\Admin\Downloads\coba\reicha
+
+06/30/2022  10:30 AM    <DIR>          .
+06/30/2022  10:30 AM    <DIR>          ..
+06/30/2022  10:30 AM                69 cv.txt
+06/30/2022  10:26 AM                82 README.md
+               2 File(s)            151 bytes
+               2 Dir(s)  133,719,539,712 bytes free
+
+C:\Users\Admin\Downloads\coba\reicha>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\Admin\Downloads\coba\reicha>git remote add origin https://github.com/Reicha01/tugas-sic-reicha
+
+C:\Users\Admin\Downloads\coba\reicha>git push origin master
+To https://github.com/Reicha01/tugas-sic-reicha
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/Reicha01/tugas-sic-reicha'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+C:\Users\Admin\Downloads\coba\reicha>git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+C:\Users\Admin\Downloads\coba\reicha>git push origin
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+C:\Users\Admin\Downloads\coba\reicha>git push --set-upstream origin master
+To https://github.com/Reicha01/tugas-sic-reicha
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/Reicha01/tugas-sic-reicha'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+C:\Users\Admin\Downloads\coba\reicha>git remote add origin https://github.com/Reicha01/github-tugas-2.git
+error: remote origin already exists.
+
+C:\Users\Admin\Downloads\coba\reicha>git remote add origin https://github.com/Reicha01/github-tugas-2
+error: remote origin already exists.
+
+C:\Users\Admin\Downloads\coba\reicha>git push origin master
+To https://github.com/Reicha01/tugas-sic-reicha
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/Reicha01/tugas-sic-reicha'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+C:\Users\Admin\Downloads\coba\reicha>git remote set-url origin https://github.com/Reicha01/github-tugas-2.git
+
+C:\Users\Admin\Downloads\coba\reicha>git push origin master
+Enumerating objects: 20, done.
+Counting objects: 100% (20/20), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (15/15), done.
+Writing objects: 100% (20/20), 1.82 KiB | 154.00 KiB/s, done.
+Total 20 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/Reicha01/github-tugas-2.git
+ * [new branch]      master -> master
+
+C:\Users\Admin\Downloads\coba\reicha>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
